@@ -1,0 +1,106 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url();
+
+}
+
+fieldset{
+    width: 3%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    background-color: yellow;
+    border-color: red;
+    border-radius: 5px;
+    color: black;
+  
+
+}
+legend{
+    font-size: 1.0rem;
+    text-align: center;
+    background-color: orange;
+    color: black;
+    border: none;
+    padding: 3px 6px;
+   width: 100px;
+   text-align: center;
+    
+
+}
+
+button{
+    margin: 25px auto;
+    display: block;
+    background-color: rgb(238, 44, 44);
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    border-color: red;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: inset;
+    
+}
+
+input{
+    width: 90%;
+    height: 20px;
+    margin: 10px auto;
+    display: inline-block;
+    text-align: center;
+    line-height: normal;
+    color: black;
+    border: 1px solid #0594f3;
+    border-radius: 10px;
+    -webkit-box-sizing: border-box; /* Chrome, Safari, Edge */
+    box-sizing: border-box;          /* Firefox */
+
+}
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}

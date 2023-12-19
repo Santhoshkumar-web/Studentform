@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<body>
+    <fieldset style="width: 300px">
+        <legend>Student Details</legend>
+        <form id="studentForm">
+            <label for="txtUser">Student Name :</label>
+            <input type="text" autofocus="off" id="txtUser" placeholder="Enter your name"><br><br>
+
+            <label for="txtPass">Student ID : </label>
+            <input type="text" id="txtPass" placeholder="Enter your ID"><br><br>
+
+            <label for="txtemail">Email :</label>
+            <input type="email" id="txtemail" placeholder="Enter your email"><br><br>
+
+            <label for="number">Mobile NO:</label>
+            <input type="tel" id="number" placeholder="Enter your mobile number"><br><br>
+
+            <label for="degree">Select Degree:</label>
+            <select id="degree" name="degree">
+                <option value="UG-BSC">UG - B.Sc</option>
+                <option value="UG-BA">UG - B.A</option>
+                <option value="UG-BTech">UG - B.Tech</option>
+                <option value="PG-MSC">PG - M.Sc</option>
+                <option value="PG-MA">PG - M.A</option>
+                <option value="PG-MTech">PG - M.Tech</option>
+            </select><br><br>
+
+            <button type="button" onclick="check()">Submit</button>
+        </form>
+    </fieldset>
+    <div class="gradient"></div>
+    <div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+<div class="content">
+    </div>
+
+    <script>
+        function check() {
+            // Get data from form inputs
+            var studentName = document.getElementById('txtUser').value;
+            var studentID = document.getElementById('txtPass').value;
+            var studentEmail = document.getElementById('txtemail').value;
+            var mobileNumber = document.getElementById('number').value;
+            var selectedDegree = document.getElementById('degree').value;
+
+            // Display the data (you can modify this part based on your requirements)
+            alert('Student Name: ' + studentName +
+                  '\nStudent ID: ' + studentID +
+                  '\nEmail: ' + studentEmail +
+                  '\nMobile Number: ' + mobileNumber +
+                  '\nSelected Degree: ' + selectedDegree);
+        }
+    </script>
+</body>
+</html>
